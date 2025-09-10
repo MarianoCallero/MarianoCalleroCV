@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mariano Callero — CV</title>
+  <style>
+    :root{
+      --bg:#2f2e30; --paper:#2f2e30; --ink:#00ffff; --muted:#66c2ff; --accent:#0084ff;
+      --chip-bg:#2f2e30; --chip-ink:·#00ffff; --rule:#00ffff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 'Courier New', Courier, monospace}
+    .page{max-width:900px;margin:32px auto;padding:0 16px}
+    .sheet{background:var(--paper);border-radius:12px;box-shadow:0 0 20px #00ffff, 0 0 40px #00ffff inset;overflow:hidden}
+    header{display:grid;grid-template-columns:140px 1fr;gap:20px;padding:28px}
+    .avatar{width:120px;height:120px;border-radius:12px;object-fit:cover;border:2px solid var(--rule)}
+    h1{font-size:28px;line-height:1.15;margin:0;color:var(--accent)}
+    .role{color:var(--muted);font-weight:600;margin-top:4px}
+    .contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;color:var(--muted)}
+    .contact a{color:inherit;text-decoration:none}
+    .contact a:hover{color:var(--accent);text-decoration:underline}
+    .section{padding:18px 28px}
+    .section + .section{border-top:1px solid var(--rule)}
+    .section h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip-bg);color:var(--chip-ink);border:1px solid var(--chip-ink);padding:6px 10px;border-radius:999px;font-size:13px}
+
+    .items{display:grid;gap:14px}
+    .item{display:grid;grid-template-columns:140px 1fr;gap:14px}
+    .item time{color:var(--muted);font-variant-numeric:tabular-nums}
+    .item h3{margin:0 0 4px;font-size:16px;color:var(--accent)}
+    .item .meta{color:var(--muted);font-size:14px}
+    .item ul{margin:8px 0 0 1rem;color:var(--muted)}
+
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+    .tools{display:flex;gap:10px;padding:16px 28px;background:#2f2e30;border-top:1px dashed var(--rule)}
+    .btn{border:1px solid var(--rule);background:#2f2e30;color:var(--accent);border-radius:10px;padding:8px 12px;cursor:pointer}
+
+    @media print{
+      body{background:black}
+      .page{margin:0}
+      .sheet{box-shadow:none;border-radius:0}
+      .tools{display:none}
+    }
+    @page{size:A4;margin:14mm}
+
+    @media (max-width:640px){
+      header{grid-template-columns:1fr}
+      .item{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+      <header>
+        <img class="avatar" src="" alt="Foto de Mariano" />
+        <div>
+          <h1>Mariano Callero</h1>
+          <div class="role">Data Engineer - Software Developer</div>
+          <div class="contact">
+            <span>📞 099478083</span>
+            <span>·</span>
+            <a href="mailto:marianocallero@gmail.com">marianocallero@gmail.com</a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/mariano-callero-castro-ab0b4916a/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2>Experiencia</h2>
+        <div class="items">
+          <article class="item">
+            <time>Febrero 2025 - Actualidad</time>
+            <div>
+              <h3>Backend Developer · IZDER (Grupo Salinas - UPAX - Mision Troder)</h3>
+              <div class="meta">Montevideo</div>
+              <ul>
+                <li>Desarrollo de microservicios en Java EE.</li>
+                <li>Construcción de estructuras de tablas para aplicaciones web.</li>
+                <li>Mantención y actualización de microservicios.</li>
+                <li>Manejo de herramientas de AWS.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="item">
+            <time>Julio 2024 - Noviembre 2024</time>
+            <div>
+              <h3>Data Engineer · Crédito de Valor</h3>
+              <div class="meta">Montevideo</div>
+              <ul>
+                <li>Desarrollo de ETL asegurando integridad y estabilidad de pipelines.</li>
+                <li>Presentación y discusión de resultados de datos asociados a los objetivos del proyecto.</li>
+                <li>Construcción de bases de datos y estructuras de tablas.</li>
+                <li>Diseño de modelos de datos para análisis de negocio.</li>
+                <li>Mantención y actualización de aplicación de antecedentes de clientes.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="item">
+            <time>Agosto 2022 - 2024</time>
+            <div>
+              <h3>Data Engineer - DevOps - Software Developer · Cencosud</h3>
+              <div class="meta">Montevideo</div>
+              <ul>
+                <li>Desarrollo de ETL, manteniendo integridad de datos y estabilidad de pipelines.</li>
+                <li>Análisis avanzados: modelos descriptivos, predictivos y aprendizaje automático.</li>
+                <li>Construcción de bases de datos y estructuras de tablas.</li>
+                <li>Desarrollo de soluciones para sistemas de recomendaciones y moderación de reviews.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="item">
+            <time>Abril 2018 - Agosto 2022</time>
+            <div>
+              <h3>Operario De Termizado Y Tipificado · Conaprole</h3>
+              <div class="meta">Villa Rodríguez, San José</div>
+              <ul>
+                <li>Brindé apoyo y orientación en el entorno laboral.</li>
+                <li>Desarrollé fuertes habilidades de trabajo en línea de producción.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="item">
+            <time>Julio 2007 - Marzo 2018</time>
+            <div>
+              <h3>Supervisor · LCC Servicios</h3>
+              <div class="meta">San José de Mayo</div>
+              <ul>
+                <li>Supervisión de flujo de trabajo y aumento de productividad.</li>
+                <li>Evaluación de desempeño de empleados.</li>
+                <li>Gestión de quejas y resolución de problemas de clientes.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="item">
+            <time>Marzo 2007 - Mayo 2007</time>
+            <div>
+              <h3>Técnico Help-desk · Avance SI</h3>
+              <div class="meta">San José de Mayo</div>
+              <ul>
+                <li>Resolución de problemas y mejoras en operaciones.</li>
+                <li>Trabajo independiente y colaborativo.</li>
+                <li>Documentación de casos.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cols">
+        <div>
+          <h2>Formación</h2>
+          <div class="chips">
+            <span class="chip">UTEC - Tecnólogo en Informática (2019 - Actualidad)</span>
+          </div>
+        </div>
+        <div>
+          <h2>Aptitudes</h2>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">AWS</span>
+            <span class="chip">SQL</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Java</span>
+            <span class="chip">C++</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Git</span>
+            <span class="chip">Oracle</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">Docker</span>
+            <span class="chip">SQL Server</span>
+            <span class="chip">Angular</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Express</span>
+            <span class="chip">NestJS</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">GitLab</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Selenium</span>
+            <span class="chip">HTTP</span>
+            <span class="chip">AI / Machine Learning</span>
+            <span class="chip">Scheme</span>
+            <span class="chip">ETL</span>
+            <span class="chip">Postman</span>
+            <span class="chip">Cloud Services</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Competencias</h2>
+        <ul>
+          <li>Análisis de datos</li>
+          <li>Generación de informes</li>
+          <li>Desarrollo de soluciones</li>
+          <li>Aprendizaje automático</li>
+          <li>Diseño de estructuras</li>
+          <li>Comunicación excelente</li>
+          <li>Resolución de problemas</li>
+          <li>Habilidades multitarea</li>
+          <li>Mantenimiento y reparación</li>
+        </ul>
+      </section>
+
+      <div class="tools">
+        <button class="btn" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+      </div>
+  </div>
+</body>
+</html>
